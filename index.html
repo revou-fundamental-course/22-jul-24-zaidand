@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tours Paylater</title>
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+
+    <body class="container">
+        <nav class="flex-header">
+            <div></div>
+            <div class="logo">
+                <img src="/images/cc.png">
+                <p>Tours Paylater</p>
+            </div>
+
+            <!--Navbar-->
+            <div class="nav-link">
+                <button class="nav"><a href="#home">Home</a></button>
+                <button class="nav"><a href="#ourpackage">Our Package</a></button>
+                <button class="nav"><a href="#contactus">Call Us</a></button>
+            </div>
+            </nav>
+        <main class="flex-main" id="home">
+                <h1>Your Trusted Travel Agent's</h1>
+                <p class="hero">Your Paylater is our hapiness</p>
+
+                <!--Gambar Tour-->
+            <div class="main">
+                <section class="main-left">
+                    <div class="slideshow-flex">
+                        <div class="slidese fade">
+                            <div class="numbertext">1 / 3</div>    
+                            <img src="/images/beach-club.jpg" class="picture">
+                            <div class="text">Beach Club PIK 2</div>
+                        </div>
+                        <div class="slidese fade">
+                            <div class="numbertext">2 / 3</div>    
+                            <img src="images/Pantai-PIK-2.webp" class="picture">
+                            <div class="text">Pantai Pasir Putih PIK 2</div>
+                        </div>
+                        <div class="slidese fade">
+                            <div class="numbertext">3 / 3</div>    
+                            <img src="/images/curug-ciki'ih.jpg" class="picture">
+                            <div class="text">Curug Cikuluwung</div>
+                        </div>
+                    </div>
+                    <article>
+                        <p class="coment">"Holidays will be more enjoyable by using this travel agent. Because... You Can PAYLATER."</p>
+                        <div class="contact">
+                            <div class="icon">
+                                <img src="/images/cartoon-backpacker.png" class="icon">
+                            </div>
+                            <div class="icon-deskrip">
+                                <p class="name">Hutangi Best</p>
+                                <p class="job">Workers Paylater and Tour Guide, 25</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="offer">
+                        <h2>
+                            Why you should choose our trips, because our service has a "Vacation Now and Paylater" option, and also our trips offer some of the things you might need such as:
+                        </h2>
+                        <ol> 
+                            <li>
+                               <div class="numbering">
+                                    <img src="/images/cc icon.png" class="numbering">
+                               </div>
+                               <div class="num-deskrip">
+                                With your Credit Card / Paylater. You can enjoy a variety of vacations with luxurious facilities.</div>     
+                            </li>
+                            <li>
+                                <div class="numbering">
+                                    <img src="/images/travelers.png" class="numbering">
+                                </div>
+                                <div class="num-deskrip">Our trips also help you to fulfill all your desires.</div>     
+                             </li>
+                             <li>
+                                <div class="numbering">
+                                    <img src="/images/tourist-woman.png" class="numbering">
+                                </div>
+                                <div class="num-deskrip">Professional tour guide will accompany your trip in a relaxed manner and friendly.</div>     
+                             </li>
+                        </ol>
+                    </div>
+                </section>
+                <div class="main-right" id="contactus">
+                    <div class="right-contact">Contact Us</div>
+                    <div class="right-deskrip">Sales will contact you 1x24 hours after we receive the data. Don't forget your credit card for paylater.</div>
+                    <form name="contact" onsubmit="return formvalidation()">
+                        <label for="fname" id="fname">Your Full Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First and last name"><br>
+                        <label for="email" id="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+                        <label for="destina" id="destina">What are you interested in?</label>
+                        <select name="destina" id="destina">
+                            <option value="" selected disabled hidden>Select option</option>
+                            <option value="kutamanda">Beach Club PIK 2</option>
+                            <option value="giliisland">Pantai Pasir Putih PIK 2</option>
+                            <option value="waterfall">Curug Cikuluwung</option>
+                        </select> 
+                        <input class="submit" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!--Our Package-->
+        <div class="package" id="ourpackage">
+            <div class="package-title">
+                <h1>Our Package</h1>
+            </div>
+            <div class="package-list">
+                <div class="list-pack">
+                    <div class="list-desk">
+                        <div><img src="/images/swimsuit-party.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Beach</p>
+                            <p class="list-exp">Vacation to the beautiful beach in PIK 2, which has the name of White Sand Beach </p>
+                        </div>
+                    </div>
+                    <div class="list-desk">
+                        <div><img src="/images/3d-island.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Seribu Island</p>
+                            <p class="list-exp">Vacation to the small islands in Kepulauan Seribu with a large selection of sea beauty.</p>
+                        </div>
+                    </div>
+                    <div class="list-desk">
+                        <div><img src="/images/waterfall-cartoon.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Waterfall</p>
+                            <p class="list-exp">Vacation to a waterfall that is very satisfying when you see it on West Java Island.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-pack">
+                    <div class="list-desk">
+                        <div><img src="/images/cute-fish.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Fishing</p>
+                            <p class="list-exp">Fishing in West Java is also a good destination to take your mind off credit card limits and inflated bills.</p>
+                        </div>
+                    </div>
+                    <div class="list-desk">
+                        <div><img src="/images/diving-school.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Diving and Snorkeling</p>
+                            <p class="list-exp">You can also dive to see the various beauties of the sea and beaches in Kepulauan Seribu.</p>
+                        </div>
+                    </div>
+                    <div class="list-desk">
+                        <div><img src="/images/explorer-with-backpack.png" alt="travel" class="imgtrav"></div>
+                        <div>
+                            <p class="list-title">Hiking</p>
+                            <p class="list-exp">Climbing hills and also Mount Cereme in Wet Java enjoying the beauty of the forest and wildlife.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="argument">
+            <p class="argu-her">Trust Your Best Vacation To Our Travel Agents</p>
+            <p class="argu-desk">If you are interested in having a vacation using our travel services you 
+                can easily contact us, we guarantee that your trip will be an unforgettable one!</p>
+            <button type="button" class="argu-button"><a href="#contactus">CALL TO ACTION</a></button>
+        </div>
+
+        <!--Footer-->
+        <footer class="flex-footer">
+            <p class="footer-log">Tours Paylater</p>
+            <div class="footer-desk">
+                <p>Terms of Service</p>  
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer-desk">
+                <p>2024</p>
+            </div>
+        </footer>
+
+        <!--JS for slide images-->
+        <script src="/js/script.js"></script>
+    </body>
 </html>
